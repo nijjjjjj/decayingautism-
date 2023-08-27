@@ -2215,14 +2215,6 @@ local Section = Tab:CreateSection("Melees")
 local Section = Tab:CreateSection("Healing/misc")
 
 local Button = Tab:CreateButton({
-    Name = "spawn Tourniquet ",
-    Callback = function()
-        local workbench = workspace.Interactables:FindFirstChild("Workbench")
-        game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
-        local args = {
-            [1] = workspace.Interactables.Workbench,
-            [2] = "workbenchblueprinttourni",
-        }
         
         game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
         wait(1.7)
