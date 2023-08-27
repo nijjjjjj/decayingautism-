@@ -1308,6 +1308,45 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["revo
     perks.craftcostmod = 599 
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "Modded arbiter(recommended)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"]
+    perk.name = "Arbiter 2.0 "
+    perk.desc = "A modified shotshell designed to kill your enemies from just your wrist."
+    perk.pros = { "More Ammunition.",", No Fall Dmg, No Explosive dmg."};
+    perk.cons = {"Explosives do alot of damage.","Cant take damage with f ability"}
+   perk.activename = "Arbiter 2.0 Improved"
+   perk.activedetails = ""
+   perks.atkmod = 60 -- 2 taps any bosses
+   perks.healthmod = 50
+   perks.defmod = 80 -- take 1 dmg per hit except explosion
+   perks.stammod = 150
+   perks.shovemod = 30
+   perks.lightatkspeed = 30
+    perks.heavyatkspeed = 50 
+    perks.recoilmod = 100
+    perks.accmod = 100
+     perks.reloadmod = 60
+     perks.noaimmod = false
+     perks.scavmod = 100
+     perks.harvestmod = 100
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -55 
+    end,
+})
+
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
  local Button = Tab:CreateButton({
