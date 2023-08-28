@@ -1346,6 +1346,43 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shot
     perks.craftcostmod = -55 
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "Jericho(Arbiter)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"]
+    perk.name = "Agent Jackson 'Jericho' K."
+    perk.desc = "you know nothing of the bottomless malice within the human heart"
+    perk.pros = { "YOU ARE HIM","Sharp you'r blade is dull.","Increased melee damage","Increased swing speed"};
+    perk.cons = {"Even tho you are HIM you still cant revived"}
+   perk.activename = "Augmentation 'Doom'"
+   perk.activedetails = "Why kolderea? It's the cheapest brand I could find, now leave me alone. -Jackson K.(Agent Jericho)"
+   perks.atkmod = 135 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 750 -- take 1 dmg per hit except explosion
+   perks.stammod = 100
+   perks.shovemod = 100
+   perks.lightatkspeed = 135
+    perks.heavyatkspeed = 125 
+    perks.recoilmod = 2000
+    perks.accmod = 100
+     perks.reloadmod = 100
+     perks.noaimmod = false
+     perks.scavmod = 1
+     perks.harvestmod = 100
+     perks.mvtmod = 55
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -500
+    end,
+})
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
