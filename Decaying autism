@@ -2448,6 +2448,7 @@ local Section = Tab:CreateSection("Melees")
 
 local Section = Tab:CreateSection("Healing/misc")
 
+
   local Button = Tab:CreateButton({
     Name = "spawn Tourni",
     Callback = function()
@@ -2457,6 +2458,18 @@ local Section = Tab:CreateSection("Healing/misc")
             [1] = workspace.Interactables.Workbench,
             [2] = "workbenchblueprintTourni",
         }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+        wait(1.7)
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbench",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+     
+    end,
+ })
 
   local Button = Tab:CreateButton({
     Name = "spawn Advanced IFAK",
