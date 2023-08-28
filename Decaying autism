@@ -2513,7 +2513,7 @@ local Section = Tab:CreateSection("Healing/misc")
      
     end,
  })
- 
+
   local Button = Tab:CreateButton({
     Name = "spawn Tourni",
     Callback = function()
@@ -2535,7 +2535,6 @@ local Section = Tab:CreateSection("Healing/misc")
      
     end,
  })
-
   local Button = Tab:CreateButton({
     Name = "Spawn Pavises",
     Callback = function()
