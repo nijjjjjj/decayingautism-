@@ -1383,6 +1383,45 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shot
     perks.craftcostmod = -500
     end,
 })
+})
+local Button = Tab:CreateButton({
+	Name = "op apostle",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shadow"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shadow"]
+    perk.name = "The Sickler"
+    perk.desc = "Damned and in Despair"
+    perk.pros = { "High speed","No Bleed, No Fall Dmg, high defense",no morale","Fast Swings and no cripple, no fracture"};
+    perk.cons = {""no ability no Heavy Hitting and no Guns ."}
+   perk.activename = "The sickler"
+   perk.activedetails = "Swallowed in Bloodlust."
+   perks.atkmod = 15 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 200 -- take 1 dmg per hit except explosion
+   perks.stammod = 1500
+   perks.shovemod = 0
+   perks.lightatkspeed = 100
+    perks.heavyatkspeed = 0 
+    perks.recoilmod = 0
+    perks.accmod = 1950
+     perks.reloadmod = 0
+     perks.noaimmod = false
+     perks.scavmod = 500
+     perks.harvestmod = 0
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 100
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = false
+    perks.falldamagemod = true
+    perks.craftcostmod = 1000 
+    end,
+})
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
