@@ -1421,6 +1421,7 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
     perks.craftcostmod = 1000 
     end,
 })
+
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
  local Button = Tab:CreateButton({
