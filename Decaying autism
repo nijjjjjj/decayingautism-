@@ -1394,13 +1394,13 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
     perk.cons = {"No Ability No Heavy Hits and No Guns"}
    perk.activename = "The Sickler"
    perk.activedetails = "Swallowed in Bloodlust"
-   perks.atkmod = 15 -- 2 taps any bosses
+   perks.atkmod = 1 -- 2 taps any bosses
    perks.healthmod = 250
-   perks.defmod = 200 -- take 1 dmg per hit except explosion
+   perks.defmod = 300 -- take 1 dmg per hit except explosion
    perks.stammod = 1500
    perks.shovemod = 1
    perks.lightatkspeed = 199
-    perks.heavyatkspeed = 1 
+    perks.heavyatkspeed = -1000 
     perks.recoilmod = 1
     perks.accmod = 1950
      perks.reloadmod = 1
@@ -1419,7 +1419,7 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
     perks.backpack = false
     perks.falldamagemod = true
     perks.craftcostmod = -400
-    perks.multicooldown = 100
+    perks.multicooldown = -100
     end,
 })
 
