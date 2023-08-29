@@ -1396,13 +1396,13 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
    perk.activedetails = "Swallowed in Bloodlust"
    perks.atkmod = 1 -- 2 taps any bosses
    perks.healthmod = 250
-   perks.defmod = 300 -- take 1 dmg per hit except explosion
+   perks.defmod = 500 -- take 1 dmg per hit except explosion
    perks.stammod = 1500
-   perks.shovemod = -1000
+   perks.shovemod = 1
    perks.lightatkspeed = 199
     perks.heavyatkspeed = -1000 
     perks.recoilmod = -1000
-    perks.accmod = 1950
+    perks.accmod = 1
      perks.reloadmod = 1
      perks.noaimmod = false
      perks.scavmod = 500
@@ -1420,6 +1420,7 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
     perks.falldamagemod = true
     perks.craftcostmod = -400
     perks.multicooldown = -100
+for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
 
