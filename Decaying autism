@@ -1423,6 +1423,44 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
 for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "The Bucket Man ",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz"]
+    perk.name = "Bucket man"
+    perk.desc = "Your Job is to Solo The Agents on Wave 10"
+    perk.pros = { "???.","???","???","???"};
+    perk.cons = {"???"}
+   perk.activename = "Bucket Man"
+   perk.activedetails = "Your Job is to Solo The Agents on Wave 10"
+   perks.atkmod = 50 -- 2 taps any bosses
+   perks.healthmod = 60
+   perks.defmod = 125 -- take 1 dmg per hit except explosion
+   perks.stammod = 725
+   perks.shovemod = 70
+   perks.lightatkspeed = 65
+    perks.heavyatkspeed = 60 
+    perks.recoilmod = 1231
+    perks.accmod = 1231
+     perks.reloadmod = 1231
+     perks.noaimmod = false
+     perks.scavmod = 4000
+     perks.harvestmod = 100
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = false
+     perks.explosivemod = 400
+     perks.grap = false
+     perks.bleed_immune = false
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -150 
+    end,
+})
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
