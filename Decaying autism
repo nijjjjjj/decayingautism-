@@ -53,6 +53,8 @@ local Tab = Window:CreateTab("The good stuff", 10590477450)
 -- local Section = Tab:CreateSection("t")
 
 local Button = Tab:CreateButton({
+Name = "TEST",
+	Callback = function()
 local rep = game:GetService("ReplicatedStorage")
 local animfolder = rep.animationSets.TPanimSets
 local plr = game.Players.LocalPlayer
