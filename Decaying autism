@@ -1443,7 +1443,6 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
 for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
-
 local Button = Tab:CreateButton({
 	Name = "The Bucket Man ",
 	Callback = function()
@@ -1451,8 +1450,8 @@ local Button = Tab:CreateButton({
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz"]
     perk.name = "Bucket man"
     perk.desc = "Your Job is to Solo The Agents on Wave 10"
-    perk.pros = { "???.",""???",""???",""???"};
-    perk.cons = {""???"}
+    perk.pros = { "???.","???","???","???"};
+    perk.cons = {"???"}
    perk.activename = "Bucket Man"
    perk.activedetails = "Your Job is to Solo The Agents on Wave 10"
    perks.atkmod = 50 -- 2 taps any bosses
