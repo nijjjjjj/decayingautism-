@@ -53,27 +53,6 @@ local Tab = Window:CreateTab("The good stuff", 10590477450)
 -- local Section = Tab:CreateSection("t")
 
 local Button = Tab:CreateButton({
-Name = "JERICHO",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/Jericho2/main/jericho'))()
-    end,
-})
-
-local Button = Tab:CreateButton({
-Name = "SLEDGE QUEEN ANIMS",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/SQANIM/main/SQANIM'))()
-    end,
-})
-
-local Button = Tab:CreateButton({
-Name = "Bucket Man ANIMS",
-	Callback = function()
-loadstring(game:HttpGet('loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/BucketMandw/main/Bucketmanscript'))()
-    end,
-})
-
-local Button = Tab:CreateButton({
 	Name = "Speed boost(Press L)",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/decaying-winter-old-goodwill/main/script1'))()
@@ -1443,6 +1422,8 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shad
 for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
+
+local Tab = Window:CreateTab("Perk Animations", 10590477450)
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
