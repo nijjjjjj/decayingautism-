@@ -52,7 +52,6 @@ local Tab = Window:CreateTab("The good stuff", 10590477450)
 
 -- local Section = Tab:CreateSection("t")
 
-
 local Button = Tab:CreateButton({
 	Name = "Speed boost(Press L)",
 	Callback = function()
