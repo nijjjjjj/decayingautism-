@@ -1461,6 +1461,48 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz
     perks.craftcostmod = -400 
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "The Commander (RUN LOBBY AND INGAME)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shield"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shield"]
+    perk.name = "Commander "
+    perk.desc = "Your Objective as a Agent is to Eliminate Yosef and Sledgequeen and get to the extraction zone.."
+    perk.pros = { "Able to Scan","Able to Dodge","Good defense and fast light hits"};
+    perk.cons = {"Slow movement speed and heavy hits"}
+   perk.activename = "Aegis MK2 PROTOTYPE"
+   perk.activedetails = "> Aegis MK2 PRTO is equipped with more durability and a option to scan, made for testing in Eden-227."
+   perks.atkmod = 65 -- 2 taps any bosses
+   perks.healthmod = 135
+   perks.defmod = 75-- Even tho your beefy explosion still hurt somehow
+   perks.stammod = 150
+   perks.shovemod = 40
+   perks.lightatkspeed = 50
+    perks.heavyatkspeed = 35
+    perks.recoilmod = 1
+    perks.accmod = 1
+     perks.reloadmod = 1
+     perks.noaimmod = false
+     perks.scavmod = 20
+     perks.harvestmod = 10
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -55
+    perks.aegisduration = math.huge
+    perks.aegisdamagetakenmelee = 0
+    perks.aegisrangeddamagemultiplier = 50
+    perks.cooldown = 0
+    end,
+})
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
@@ -3720,5 +3762,19 @@ local Button = Tab:CreateButton({
 Name = "Bucket Man",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/BucketMandw/main/Bucketmanscript'))()
+    end,
+})
+ local Tab = Window:CreateTab("The Commander", 10590477450)
+
+local Button = Tab:CreateButton({
+Name = "The COmmander ability G",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/YES/main/YES'))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "Prophet Ability",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/PROPHETSCAN/main/PROPHETSCAN'))()
     end,
 })
