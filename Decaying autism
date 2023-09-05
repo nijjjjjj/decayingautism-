@@ -1423,28 +1423,6 @@ for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldow
     end,
 })
 
-local Tab = Window:CreateTab("Perk Animations", 10590477450)
-local Button = Tab:CreateButton({
-Name = "JERICHO",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/Jericho2/main/jericho'))()
-    end,
-})
-
-local Button = Tab:CreateButton({
-Name = "SLEDGE QUEEN ANIMS",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/SQANIM/main/SQANIM'))()
-    end,
-})
-
-local Button = Tab:CreateButton({
-Name = "Bucket Man ANIMS",
-	Callback = function()
-loadstring(game:HttpGet('loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/BucketMandw/main/Bucketmanscript'))()
-    end,
-})
-
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
  local Button = Tab:CreateButton({
