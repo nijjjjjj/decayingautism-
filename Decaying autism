@@ -3314,6 +3314,49 @@ local Section = Tab:CreateSection("Healing/misc")
         
     end,
  })
+local Button = Tab:CreateButton({
+    Name = "SOF nametag",
+    Callback = function()
+        function Respawn()
+            workspace.ServerStuff.spawnPlayer:FireServer("respawncharacter")
+        end 
+        
+        function Hub()
+            workspace.ServerStuff.spawnPlayer:FireServer("hubbing")
+        end    
+        
+        function Start(arg)
+            if arg == "Normal" then
+                game.Players.LocalPlayer:FindFirstChild("start").Value = "normal"
+            elseif arg == "Ray" then
+                game.Players.LocalPlayer:FindFirstChild("start").Value = "normal"
+            end    
+        end
+        
+        function Spawn(Cords)
+            Respawn()
+            repeat task.wait() until not game.Players.LocalPlayer.Character:FindFirstChild("Outfit")
+            Hub()
+            Start("Normal")
+            repeat task.wait() until game.Players.LocalPlayer.Character:FindFirstChild("Outfit")
+            if Cords == "Match" then
+                game.Players.LocalPlayer.start.Value = "normal"
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(18.777990341186523, -2.5860984325408936, -9.264251708984375)
+            elseif Cords == "HubA" then
+                game.Players.LocalPlayer.start.Value = "hubbing"
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-118.72508239746094, -22.03114128112793, 1088.935546875)
+            elseif Cords == "Respawn" then
+                game.Players.LocalPlayer.start.Value = "hubbing"
+                Respawn()
+            elseif Cords == "HubB" then
+                game.Players.LocalPlayer.start.Value = ""
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-118.72508239746094, -22.03114128112793, 1088.935546875)
+            end
+        end
+        
+        Spawn("Match") --- Match (puts you in match with pvp), HubB (hub with pvp), HubA (hub without pvp), Respawn (puts you back into menu)
+    end,
+ })
  local Button = Tab:CreateButton({
     Name = "Menu (sends you to the main menu)",
     Callback = function()
@@ -3912,7 +3955,50 @@ end)
         Shadow:NewDropdown("Voicelines", "Taunt", {"taunt1", "taunt2", "taunt3", "taunt4"}, function(hidden)
         Play:FireServer({"events", "hiddenB"}, hidden, workspace)
         end)
+        local Button = Tab:CreateButton({
+    Name = "SOF nametag",
+    Callback = function()
+        function Respawn()
+            workspace.ServerStuff.spawnPlayer:FireServer("respawncharacter")
+        end 
         
+        function Hub()
+            workspace.ServerStuff.spawnPlayer:FireServer("hubbing")
+        end    
+        
+        function Start(arg)
+            if arg == "Normal" then
+                game.Players.LocalPlayer:FindFirstChild("start").Value = "normal"
+            elseif arg == "Ray" then
+                game.Players.LocalPlayer:FindFirstChild("start").Value = "normal"
+            end    
+        end
+        
+        function Spawn(Cords)
+            Respawn()
+            repeat task.wait() until not game.Players.LocalPlayer.Character:FindFirstChild("Outfit")
+            Hub()
+            Start("Normal")
+            repeat task.wait() until game.Players.LocalPlayer.Character:FindFirstChild("Outfit")
+            if Cords == "Match" then
+                game.Players.LocalPlayer.start.Value = "normal"
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(18.777990341186523, -2.5860984325408936, -9.264251708984375)
+            elseif Cords == "HubA" then
+                game.Players.LocalPlayer.start.Value = "hubbing"
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-118.72508239746094, -22.03114128112793, 1088.935546875)
+            elseif Cords == "Respawn" then
+                game.Players.LocalPlayer.start.Value = "hubbing"
+                Respawn()
+            elseif Cords == "HubB" then
+                game.Players.LocalPlayer.start.Value = ""
+                game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-118.72508239746094, -22.03114128112793, 1088.935546875)
+            end
+        end
+        
+        Spawn("Match") --- Match (puts you in match with pvp), HubB (hub with pvp), HubA (hub without pvp), Respawn (puts you back into menu)
+    end,
+ })
+
         -- Settings --
         
         local Set = Settings:NewSection("Settings")
