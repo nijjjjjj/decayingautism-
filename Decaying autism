@@ -3764,7 +3764,7 @@ Name = "Bucket Man",
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/BucketMandw/main/Bucketmanscript'))()
     end,
 })
- local Tab = Window:CreateTab("The Commander", 10590477450)
+ local Tab = Window:CreateTab("Abilities", 10590477450)
 
 local Button = Tab:CreateButton({
 Name = "The COmmander ability G",
@@ -3776,5 +3776,41 @@ local Button = Tab:CreateButton({
 Name = "Prophet Ability",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/PROPHETSCAN/main/PROPHETSCAN'))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "ilija (Y to dash U to tp)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/ichijo/main/laststrandedsniperthing"))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "MCXSCAV (Y to dash)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/MCXSCAV/main/MCXSCAV"))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "DELTA CHAR (Y to dash)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/deltachar/main/Deltaajm"))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "IcePick Scav (Y to dash)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/IceScav/main/Icepickscav"))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "Dash (Left alt to dash)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/Dash/main/dash"))()
+    end,
+})
+local Button = Tab:CreateButton({
+Name = "Ichijo script 2 (maybe working)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/ichijo2/main/ichijoscript"))()
     end,
 })
