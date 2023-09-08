@@ -1503,7 +1503,231 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shie
     perks.cooldown = 0
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "GOD",
+	Callback = function()
+ local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"]
+if perks then
+    perk.name = "God"
+    perk.desc = "The unknow being that created this world"
+    perk.pros = { "God's Power"};
+    perk.cons = {"God doesn't have weakness"}
+   perk.activename = "Pure Human"
+   perk.activedetails = "Disguise as a normal human with no ability"
+    perks.atkmod = 1950 -- 2 taps any bosses
+    perks.healthmod = 250
+    perks.defmod = 1500 -- take 1 dmg per hit except explosion
+    perks.stammod = 1950
+    perks.shovemod = 1950
+    perks.lightatkspeed = 100
+     perks.heavyatkspeed = 1950 
+     perks.recoilmod = 2000
+     perks.accmod = 1950
+     perks.reloadmod = 1900
+     perks.noaimmod = false
+     perks.scavmod = 1000
+     perks.harvestmod = 100
+     perks.trapmod = 1950
+     perks.mvtmod = 40
+     perks.explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.burnimmune = true
+    perks.craftcostmod = -55 -- Everytime you craft an ITEM you will get 50 scraps
+end
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Ilijia (Survival)",
+	Callback = function()
+ local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"]
+    perk.name = "Ilija"
+    perk.desc = "Bang"
+    perk.pros = { "Yes."};
+    perk.cons = {"Noe"}
+   perk.activename = "Sniper"
+   perk.activedetails = "Don't shoot ur fucking teammate"
+    perks.atkmod = 70
+    perks.healthmod = 50
+    perks.defmod = 900
+    perks.stammod = 950
+    perks.shovemod = 100
+    perks.lightatkspeed = 100
+     perks.heavyatkspeed = 1000 
+     perks.recoilmod = 900
+     perks.accmod = 900
+     perks.reloadmod = 900
+     perks.noaimmod = false
+     perks.scavmod = 4000
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -10 
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Shadow Emperor",
+	Callback = function()
+ local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shadow"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shadow"]
+if perks then
+    perk.name = "The Shadow Emperor"
+    perk.desc = "He was tired of the loose shadow hunters and decided to take things to his own claws"
+    perk.pros = { "Increased Attack","Increased Stamina","Immune to most effects","Heightened Defense","No exhaustion","controls his minions better" }
+    perk.cons = { "your not fire proof","you cant use guns well" }
+   perk.activename = "The Under World Taker"
+   perk.activedetails = "do i really have to take everything to my own hand..."
+   perk.icon = "rbxassetid://8895914965"
+    perks.atkmod = 130
+    perks.defmod = 800
+    perks.stammod = 400
+    perks.shovemod = 60
+    perks.lightatkspeed = 40
+     perks.heavyatkspeed = 80
+     perks.recoilmod = -30
+     perks.accmod = 80
+     perks.reloadmod = -2
+     perks.noaimmod = true
+     perks.mvtmod = -30
+     perks.cripple_immune = true
+     perks.bleed_immune = true
+     perks.exhaust_immune = true
+     perks.grap = true
+     perks.falldamagemod = true
+     perks.frac_immune = true
+     perks.burnimmune = false
+end
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "HardCore Mode",
+	Callback = function()
+ local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["damn"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["damn"]
+if perks then
+    perk.name = "Hardcore mode"
+    perk.desc = "Living is a skill issue"
+    perk.pros = { "No" }
+    perk.cons = { "Yes" }
+    perk.activename = "No perk for you"
+   perk.activedetails = "Cry about it"
+    perks.atkmod = -100
+    perks.defmod = -100
+    perks.stammod = -99
+    perks.shovemod = -100 
+    perks.lightatkspeed = -100
+     perks.heavyatkspeed = -100
+     perks.recoilmod = -100
+     perks.accmod = -100
+     perks.reloadmod = -100
+     perks.noaimmod = true
+     perks.mvtmod = 1
+     perks.nomorale = false --Doesn't work remove if you wish 
+end
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Yosef (survival)",
+	Callback = function()
+ local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["survival"]
+if perks then
+    perk.name = "Yosef"
+    perk.desc = "Yosef is a simple man, He sees an agent? shoot em. He gets betrayed? kill the one who betrayed em."
+    perk.pros = { "All Main Stats Drastically Increased.","Immune To Most Debuffs." }
+    perk.cons = { "Reduced movement speed.","No practice with melees." }
+   perk.activename = "A man and his gun on the run."
+   perk.activedetails = "Yosef and his M60 can mow down anything that gets in their path. A true savage, at most."
+   perk.icon = "rbxassetid://6885820351"
+    perks.atkmod = 125
+    perks.defmod = 850
+    perks.stammod = 750
+    perks.shovemod = 45
+    perks.healthmod = 25
+    perks.lightatkspeed = -65
+     perks.heavyatkspeed = -65
+     perks.recoilmod = 150
+     perks.accmod = 150
+     perks.reloadmod = 75
+     perks.noaimmod = false
+     perks.mvtmod = -30
+     perks.cripple_immune = true
+     perks.bleed_immune = true
+     perks.exhaust_immune = true
+     perks.grap = true
+     perks.falldamagemod = true
+     perks.frac_immune = true
+     perks.burnimmune = true
+     perks.nomorale = true
+     perks.explosive_resist = true
+end
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "The Juggernaut ",
+	Callback = function()
+ repeat
+    task.wait()
+until game:IsLoaded()
 
+
+local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["gunner"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["gunner"]
+if perks then
+ perk.name = "The Juggerrnaut"
+    perk.desc = "A Specialized Minigunner agent specially trained for missions like these."
+    perk.pros = { "Barely any cooldown and overheat","High defense and no usage " }
+    perk.cons = { "Reduced movement speed.","No practice with melees." }
+   perk.activename = "TYPE-34 VULKAN-MG"
+   perk.activedetails = "The Type 34 Vulkan MiniGun is designed for no ammo usage and no overheat, it is a prototype and is very heavy so be careful with it, wouldnt want any rogue agents having it wouldnt we?"
+    perks.defmod = 75
+    perks.atkmod = 25
+    perks.recoilmod = 20
+    perks.accmod = 100
+    perks.shovemod = 100
+    perks.stammod = 100
+    perks.noaimmod = false
+    perks.bleed_immune = true
+    perks.heavyatkspeed = 1000
+    perks.cripple_immune = false
+    perks.nomorale = true
+    perks.reloadmod = 25
+    perks.frac_immune = true
+    perks.falldamagemod = true
+    perk["activestats"]["vulka_overheat_duration"] = 0
+    perk["activestats"]["vulka_slowdown"] = 0 
+    perk["activestats"]["vulka_range"] =  500
+    perk["activestats"]["vulka_accuracy_timer"] = 0 
+    perk["activestats"]["cooldown"] =  1 
+    perk["activestats"]["perk_mincd"] = 0 
+    perk["activestats"]["vulka_ammo_usage"] = 0
+end
+
+task.wait(0.5)
+local args = {
+    [1] = "respawncharacter"
+}
+
+workspace.ServerStuff.spawnPlayer:FireServer(unpack(args))
+    end,
+})
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
 local Section = Tab:CreateSection("Guns")
  local Button = Tab:CreateButton({
