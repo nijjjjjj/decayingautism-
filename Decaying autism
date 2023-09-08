@@ -3763,7 +3763,7 @@ Name = "Bucket Man",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/BucketMandw/main/Bucketmanscript'))()
     end,
-})
+}}
  local Tab = Window:CreateTab("The Commander", 10590477450)
 
 local Button = Tab:CreateButton({
@@ -3777,8 +3777,6 @@ Name = "Prophet Ability",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nijjjjjj/PROPHETSCAN/main/PROPHETSCAN'))()
     end,
-})
-loadstring(game:HttpGet("https://github.com/nijjjjjj/ichijo/blob/main/laststrandedsniperthing"))()
 })
 local Button = Tab:CreateButton({
 Name = "ilija (Y to dash U to tp)",
@@ -3816,5 +3814,4 @@ Name = "Ichijo script 2 (maybe working)",
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nijjjjjj/ichijo2/main/ichijoscript"))()
     end,
 })
-https://raw.githubusercontent.com/nijjjjjj/ichijo2/main/ichijoscript
 
