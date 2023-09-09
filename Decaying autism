@@ -1729,7 +1729,7 @@ workspace.ServerStuff.spawnPlayer:FireServer(unpack(args))
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "The Skilled Rogue (Vagabond)",
+	Name = "Rogue agent  (Vagabond)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].basestats
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"]
@@ -1764,6 +1764,45 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["swor
     perks.backpack = true
     perks.falldamagemod = true
     perks.craftcostmod = -55 
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Sledge Queen",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"]
+    perk.name = "Agent Zero"
+    perk.desc = "Forged into fire."
+    perk.pros = { "More Ammunition.","Speed, No Fall Dmg, No Explosive dmg, and take barely any HP upon shot.","0 Cooldown","Faster Swings"};
+    perk.cons = {"Your Sledge Queen."}
+   perk.activename = "Augmentation "Knuckleboom"
+   perk.activedetails = "KABLOOEH"
+   perks.atkmod = 1950 -- 2 taps any bosses
+   perks.healthmod = 1950
+   perks.defmod = 1950 -- take 1 dmg per hit except explosion
+   perks.stammod = 1950
+   perks.shovemod = 1950
+   perks.lightatkspeed = 1950
+    perks.heavyatkspeed = 1950 
+    perks.recoilmod = 2000
+    perks.accmod = 1950
+     perks.reloadmod = 900
+     perks.noaimmod = false
+     perks.scavmod = 4000
+     perks.harvestmod = 100
+     perks.mvtmod = 1950
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -55 
+for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
